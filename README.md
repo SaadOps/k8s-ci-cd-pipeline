@@ -55,7 +55,7 @@
 10. Generate the token from the SonarQube and provide it to Jenkins as a secret.
 
 11. Write Jenkins Pipeline using JenkinsFile.
-    ``` groovy
+   ```groovy
 pipeline {
   agent {
     docker {
@@ -109,7 +109,7 @@ pipeline {
       }
       steps {
         withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
-          sh 
+          sh '''
             git config user.email "saad7teen@gmail.com"
             git config user.name "SaadOps"
             BUILD_NUMBER=${BUILD_NUMBER}
@@ -117,15 +117,12 @@ pipeline {
             git add CICD/java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
             git commit -m "Update deployment image to version ${BUILD_NUMBER}"
             git push https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
-          
+          '''
         }
       }
     }
   }
-}
 ```
-
-
 12. Create a new Pipeline, Define the Pipeline script from Source Code Management (SCM).
     - SCM: git
     - Path: Provide the Path location of the JenkinsFile
