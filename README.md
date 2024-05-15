@@ -78,7 +78,7 @@ pipeline {
     }
     stage('Static Code Analysis') {
       environment {
-        SONAR_URL = "http://184.73.15.158:9000/"
+        SONAR_URL = "http://<EC2 IP ADDRESS>:9000/"
       }
       steps {
         withCredentials([string(credentialsId: 'sonarkube', variable: 'SONAR_AUTH_TOKEN')]) {
