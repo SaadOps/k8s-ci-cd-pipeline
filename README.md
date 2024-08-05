@@ -3,7 +3,7 @@
 
 # Table of Contents
 - [Continuous Integration](#continuous-integration)
-- [Continuous Delivery (CI)](#continuous-delivery-ci)
+- [Continuous Delivery ](#continuous-delivery-ci)
 
 ## Continuous Integration
 1. Step up t2.medium EC2 Instance from AWS Management Console.
