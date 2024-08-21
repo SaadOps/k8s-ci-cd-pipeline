@@ -1,5 +1,7 @@
 # JENKINS-END-TO-END-CICD-Implementation
-![2024-04-16 11 56 42 web telegram org 2468f1127a03](https://github.com/SaadOps/JENKINS-END-TO-END-CICD-Implementation/assets/94478736/80947195-4371-40c0-97b7-82dc19a92ea1)
+
+![image](https://github.com/user-attachments/assets/567c075d-746c-448f-8cec-7b6c946e7d58)
+
 
 # Table of Contents
 - [Continuous Integration](#continuous-integration)
